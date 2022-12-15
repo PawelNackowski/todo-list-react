@@ -2,7 +2,7 @@
 
 const Footer = () => (
     <footer className="section__footer">
-        Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 1.1)
+        Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 0.2.0)
       </footer>
 );
 
