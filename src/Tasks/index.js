@@ -4,7 +4,7 @@ const Tasks = (props) => (
   <ul className="task">
     {props.tasks.map(task => (
       <li key={task.id}
-        className={`task__item${task.done && props.hidenDoneTasks ? "task__item--hiden" : ""}`}
+        className={`task__item${task.done && props.hidenDone ? "task__item--hiden" : ""}`}
       >
          <button className="task__button task__button--toggleDone">
       {task.done ? " ✔" : ""}
