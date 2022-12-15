@@ -5,7 +5,8 @@ const Buttons = (props) => (
     {props.tasks.length > 0 && (
       <>
         <button className="buttons__button">
-          {props.hidenDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+          {props.hidenDoneTasks ? "Pokaż" : "Ukryj"}
+          ukończone
         </button>
         <button
           className="buttons__button"
