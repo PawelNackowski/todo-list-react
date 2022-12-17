@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Demo
 Version 1.2.0 without interaction:
 [Website link](https://pawelnackowski.github.io/todo-list-react/)
+![Demo.gif](public/demo.gif) 
 
 ## Technologies used
 - HTML
