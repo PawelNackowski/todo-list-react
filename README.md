@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Demo
-Version 1.2.0 without interaction:
+Version 1.0.0 :
 [Website link](https://pawelnackowski.github.io/todo-list-react/)
 ![Demo.gif](public/demo.gif) 
 
