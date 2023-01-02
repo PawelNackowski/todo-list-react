@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Container from "./Container";
 
-const DEFAULT_TASKS =[
+const DEFAULT_TASKS = [
   { id: 1, content: "przykładowe zadanie niewykonane", done: false },
   { id: 2, content: "przykładowe zadanie wykonane", done: true },
 ];
@@ -25,8 +25,9 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => task.id === id ? { ...task, done: !task.done }: task))};
-    
+    setTasks(tasks => tasks.map(task => task.id === id ? { ...task, done: !task.done } : task))
+  };
+
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task,
@@ -36,7 +37,7 @@ function App() {
 
   const addNewTask = (content) => {
     if (content === "") {
-      return;  
+      return;
     };
     setTasks(tasks => [
       ...tasks,
