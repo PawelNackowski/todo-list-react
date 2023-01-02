@@ -7,12 +7,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Container from "./Container";
 
+const DEFAULT_TASKS =[
+  { id: 1, content: "przykładowe zadanie niewykonane", done: false },
+  { id: 2, content: "przykładowe zadanie wykonane", done: true },
+];
+
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przykładowe zadanie niewykonane", done: false },
-    { id: 2, content: "przykładowe zadanie wykonane", done: true },
-  ]);
+  const [tasks, setTasks] = useState(DEFAULT_TASKS);
 
   const toggleHideDone = () => {
     setHideDone(hidenDone => !hidenDone);
@@ -23,15 +25,8 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-
-      return task;
-    }));
-  };
-
+    setTasks(tasks => tasks.map(task => task.id === id ? { ...task, done: !task.done }: task))};
+    
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task,
