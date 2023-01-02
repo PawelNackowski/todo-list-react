@@ -1,5 +1,5 @@
 # Todo List
-
+It's a simple task-list. You can write task on blank and mark you're task if is a done. You cane also remove you're tasks.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Demo
 Version 1.0.0 :
