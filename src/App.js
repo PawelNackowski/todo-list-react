@@ -4,9 +4,9 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Footer from "./Footer";
 import Container from "./Container";
 import { useTasks } from "./useTasks";
+import { Footer } from "./styled";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -47,7 +47,9 @@ function App() {
             setAllDone={setAllDone}
           />}
       />
-      <Footer />
+      <Footer>
+        Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 1.1.0)
+      </Footer>
     </Container>
   );
 }
