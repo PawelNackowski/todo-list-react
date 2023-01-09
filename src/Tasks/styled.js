@@ -11,7 +11,7 @@ import styled, { css } from "styled-components";
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
-    border-bottom: solid 1px #ddd; 
+    border-bottom: solid 1px ${({theme}) => theme.color.alto}; 
     padding: 10px;
 
     ${({ hiden }) => hiden && css`
@@ -30,32 +30,31 @@ import styled, { css } from "styled-components";
     height: 30px;
     font-size: 20px;
     cursor: pointer;
-    color: white;
+    color: ${({theme}) => theme.color.white};
     padding: 0;
     border: none;
 
     ${({ toggleDone }) => toggleDone && css`
-      background-color: green;
+      background-color: ${({theme}) => theme.color.forestGreen};
       transition: 0.5s;
       
       &:hover{
-        background-color: hsl(120, 100%, 30%);
+        filter:brightness(115%);
       };
         
       &:active{
-        background-color: hsl(120, 100%, 40%);
+        filter:brightness(130%);
       `};
 
     ${({ remove }) => remove && css`
-      background-color: red;
+      background-color: ${({theme}) => theme.color.crimson};
       transition: 0.5s;
 
       &:hover{
-        background-color: hsl(0, 100%, 60%);
+        filter:brightness(115%);
       };
-
+        
       &:active{
-        background-color: hsl(0, 100%, 70%);
-      };
+        filter:brightness(130%);
     `}
   `;
