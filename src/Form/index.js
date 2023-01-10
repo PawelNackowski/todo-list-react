@@ -11,9 +11,9 @@ const Form = ({ addNewTask }) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    focusInput(inputRef);
     addNewTask(newTaskContent.trim());
     setNewTaskContent("");
+    focusInput(inputRef);
   };
 
   return (
