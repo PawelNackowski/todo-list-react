@@ -14,6 +14,7 @@ Version 1.1.0 :
 - Grid
 - Flex
 - React
+- Redux
 ## Available Scripts
 
 In the project directory, you can run:
