@@ -9,9 +9,7 @@ import TaskList from "./TaskList";
 function Tasks() {
 
   const {
-    addNewTask,
     setAllDone,
-    removeTask
   } = useTasks();
 
   return (
@@ -19,13 +17,12 @@ function Tasks() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form/>}
       />
       <Section
         title="Lista zadań"
         body={
           <TaskList
-            removeTask={removeTask}
           />}
         extraHeaderContent={
           <Buttons
