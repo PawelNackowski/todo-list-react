@@ -7,14 +7,14 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
     background: transparent;
-    color: ${({theme}) => theme.color.teal};
+    color: ${({ theme }) => theme.color.teal};
     border: none;
     cursor: pointer;
     outline: inherit;
     transition: 0.5s;
     margin-left: 20px;
 
-    @media(max-width: ${({theme}) => theme.breakpoint.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         flex-basis: 100%;
         margin: 10px;
     }
@@ -28,6 +28,7 @@ export const Button = styled.button`
     }
 
     &:disabled{
-        color: ${({theme}) => theme.color.silver};
+        color: ${({ theme }) => theme.color.silver};
+        cursor: default;
     }
     `;
