@@ -8,7 +8,7 @@ const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
 
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const focusInput = () => {
     inputRef.current.focus();
@@ -16,7 +16,7 @@ const dispatch = useDispatch();
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    if (newTaskContent.trim() === "") return 
+    if (newTaskContent.trim() === "") return
 
     dispatch(addTasks({
       content: newTaskContent.trim(),

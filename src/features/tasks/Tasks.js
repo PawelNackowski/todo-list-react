@@ -6,7 +6,6 @@ import { Footer, Container } from "../../styled";
 import TaskList from "./TaskList";
 
 function Tasks() {
-
   return (
     <Container>
       <Header title="Lista zadań" />
