@@ -5,7 +5,7 @@ import Header from "../../common/Header";
 import { Footer, Container } from "../../styled";
 import TaskList from "./TaskList";
 
-function Tasks() {
+function TasksPages() {
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -25,4 +25,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPages;
