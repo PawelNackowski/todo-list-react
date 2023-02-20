@@ -3,6 +3,7 @@ import Section from "../../common/Section";
 import { Container, Footer } from "../../styled";
 
 
+
 const Author = () => (
   <Container>
     <Header title="O Autorze" />
