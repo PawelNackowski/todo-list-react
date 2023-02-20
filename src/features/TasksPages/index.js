@@ -1,9 +1,9 @@
-import Form from "./Form";
-import Buttons from "./Buttons";
-import { Footer, Container } from "../../styled";
-import TaskList from "./TaskList";
-import Header from "../../common/Header";
+import Form from "../TasksPages/Form";
+import Buttons from "../TasksPages/Buttons";
+import TaskList from "../TasksPages/TaskList";
+import { Container, Footer } from "../../styled";
 import Section from "../../common/Section";
+import Header from "../../common/Header";
 
 function TasksPages() {
   return (
