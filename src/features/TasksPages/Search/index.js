@@ -2,7 +2,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../tasks/Input";
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
-
+// replaceQueryParametrs zrobić hook
 const Search = () => {
   const location = useLocation();
   const history = useHistory();

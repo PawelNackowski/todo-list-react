@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Footer = styled.footer`
@@ -11,3 +12,9 @@ export const Container = styled.main`
     padding: 20px;
     margin: 0 auto;
 `;
+
+export const StyledNavLink = styled(NavLink)`
+&.active{
+    color: gray;
+}
+`
