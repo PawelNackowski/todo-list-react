@@ -5,6 +5,7 @@ import { Container, Footer } from "../../styled";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Search from "./Search";
+import ExampleTask from "./ExampleTask";
 
 function TasksPages() {
   return (
@@ -13,6 +14,7 @@ function TasksPages() {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
+        extraHeaderContent={<ExampleTask />}
       />
 
       <Section

@@ -2,7 +2,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../tasks/Input";
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
-// replaceQueryParametrs zrobić hook
+
 const Search = () => {
   const location = useLocation();
   const history = useHistory();
@@ -19,15 +19,14 @@ const Search = () => {
 
     history.push(`${location.pathname}?${searchParams.toString()}`);
   };
-
   return (
-   <Wrapper>
+    <Wrapper>
       <Input
         placeholder="Filtruj zadanie"
         value={query || ""}
         onChange={onInputChange}
       />
-   </Wrapper>
+    </Wrapper>
   )
 };
 
