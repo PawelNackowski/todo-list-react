@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
 import { fetchExampleTasks, selectLoading } from "../../tasks/tasksSlice";
 import { Button, Wrapper } from "../Buttons/styled"
+import Loader from "./Loader";
+
 
 const ExampleTask = () => {
   const dispatch = useDispatch();
@@ -12,7 +14,7 @@ const ExampleTask = () => {
         onClick={() => dispatch(fetchExampleTasks())} disabled={Loading}
       >
         {Loading
-          ? "Ładowanie"
+          ? <Loader />
           : "Pobierz przykładowe zadania"
         }
 
