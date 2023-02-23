@@ -28,7 +28,7 @@ function TasksPages() {
         body={<TaskList />}
         extraHeaderContent={<Buttons />}
       />
-<Footer/>
+      <Footer />
     </Container>
   );
 }
