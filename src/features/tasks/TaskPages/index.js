@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import Footer from "../../../common/Footer";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
-import { Container, Footer } from "../../../styled";
+import { Container } from "../../../styled";
 import { getTaskById } from "../tasksSlice";
 
 const TaskPages = () => {
@@ -18,9 +19,7 @@ const task = useSelector(state => getTaskById(state, id));
           <><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>
         }
       />
-      <Footer>
-        Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 1.1.0)
-      </Footer>
+      <Footer />
     </Container>
   )
 }

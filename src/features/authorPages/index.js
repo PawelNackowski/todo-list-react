@@ -1,6 +1,7 @@
+import Footer from "../../common/Footer";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
-import { Container, Footer } from "../../styled";
+import { Container } from "../../styled";
 
 
 
@@ -15,9 +16,7 @@ const Author = () => (
       </>
       }
     />
-    <Footer>
-      Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 1.1.0)
-    </Footer>
+    <Footer />
   </Container>
 );
 

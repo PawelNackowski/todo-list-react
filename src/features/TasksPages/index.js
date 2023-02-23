@@ -1,11 +1,12 @@
 import Form from "../TasksPages/Form";
 import Buttons from "../TasksPages/Buttons";
 import TaskList from "../TasksPages/TaskList";
-import { Container, Footer } from "../../styled";
+import { Container } from "../../styled";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Search from "./Search";
 import ExampleTask from "./ExampleTask";
+import Footer from "../../common/Footer";
 
 function TasksPages() {
   return (
@@ -27,10 +28,7 @@ function TasksPages() {
         body={<TaskList />}
         extraHeaderContent={<Buttons />}
       />
-
-      <Footer>
-        Ⓒ Lista zadań stworzona przez Paweł Nackowski (ver. 1.1.0)
-      </Footer>
+<Footer/>
     </Container>
   );
 }
