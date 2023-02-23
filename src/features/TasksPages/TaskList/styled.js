@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
   export const List = styled.ul`
@@ -13,9 +14,9 @@ import styled, { css } from "styled-components";
     align-items: center;
     border-bottom: solid 1px ${({theme}) => theme.color.alto}; 
     padding: 10px;
-
+    
     ${({ hiden }) => hiden && css`
-    display: none;
+      display: none;
     `}
   `;
 
@@ -58,3 +59,8 @@ import styled, { css } from "styled-components";
         filter:brightness(130%);
     `}
   `;
+
+  export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({theme}) => theme.color.black};
+  `
