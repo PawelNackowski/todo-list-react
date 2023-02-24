@@ -9,13 +9,13 @@ export const Container = styled.main`
 
 export const StyledNavLink = styled(NavLink)`
     color: ${({ theme }) => theme.color.white};
-    font-size: 20px;
+    font-size: 15px;
     margin: 20px;
     text-decoration: none;
     
     &.active{
         font-weight: bold;
-        font-size: 25px;
+        font-size: 110%;
     }
 `;
 
