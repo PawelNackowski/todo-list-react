@@ -2,7 +2,7 @@
 It's a simple task-list. You can write task on blank and mark you're task if is a done. You cane also remove you're tasks.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Demo
-Version 1.1.0 :
+
 [Website link](https://pawelnackowski.github.io/todo-list-react/)
 ![Demo.gif](demo.gif) 
 
