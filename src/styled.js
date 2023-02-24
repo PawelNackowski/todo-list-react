@@ -26,4 +26,5 @@ export const StyledList = styled.ul`
     padding: 20px;
     margin: 0;
     background-color: ${({theme} )=> theme.color.teal};
+     box-shadow: 0px 10px 5px ${({ theme }) => theme.color.alto};
 `
