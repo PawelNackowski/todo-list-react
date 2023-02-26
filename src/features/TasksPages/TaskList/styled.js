@@ -63,4 +63,8 @@ import styled, { css } from "styled-components";
   export const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({theme}) => theme.color.black};
+
+        &:hover{
+          text-decoration: underline;
+        }
   `
