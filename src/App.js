@@ -1,7 +1,8 @@
 import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import Author from "./features/authorPages";
 import TasksPages from "./features/TasksPages";
-import TaskPages from "./features/tasks/TaskPages";
+import TaskPages from "./features/TasksPages/Tasks/TaskPages";
+
 import { StyledList, StyledNavLink } from "./styled";
 
 const App = () => (

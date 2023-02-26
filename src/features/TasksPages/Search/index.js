@@ -1,5 +1,5 @@
 import { useHistory, useLocation } from "react-router-dom";
-import Input from "../../tasks/Input";
+import { Input } from "../Tasks/Input/styled"
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
 

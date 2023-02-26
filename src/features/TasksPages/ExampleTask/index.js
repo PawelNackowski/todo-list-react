@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { fetchExampleTasks, selectLoading } from "../../tasks/tasksSlice";
+import { fetchExampleTasks, selectLoading } from "../../TasksPages/Tasks/tasksSlice";
 import { Button, Wrapper } from "../Buttons/styled"
 import Loader from "./Loader";
 
