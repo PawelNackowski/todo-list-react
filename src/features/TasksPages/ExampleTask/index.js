@@ -6,14 +6,14 @@ import Loader from "./Loader";
 
 const ExampleTask = () => {
   const dispatch = useDispatch();
-  const Loading = useSelector(selectLoading);
+  const loading = useSelector(selectLoading);
 
   return (
     <Wrapper>
       <Button
-        onClick={() => dispatch(fetchExampleTasks())} disabled={Loading}
+        onClick={() => dispatch(fetchExampleTasks())} disabled={loading}
       >
-        {Loading
+        {loading
           ? <Loader />
           : "Pobierz przykładowe zadania"
         }
