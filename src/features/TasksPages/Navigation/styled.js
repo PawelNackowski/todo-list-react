@@ -22,7 +22,7 @@ export const StyledNavLink = styled(NavLink)`
 
 export const StyledList = styled.ul`
     display: flex;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     list-style: none;
