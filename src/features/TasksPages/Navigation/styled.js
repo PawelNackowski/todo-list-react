@@ -8,8 +8,6 @@ export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
 
     &:hover{
-        transition: 1s;
-        filter: brightness(80%);
         text-decoration: underline;
     }
 
